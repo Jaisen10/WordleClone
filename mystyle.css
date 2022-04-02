@@ -1,0 +1,36 @@
+@keyframes key {
+  0%   {transform:scale:(1); animation-timing-function:ease-in-out;}
+  25%  {transform:scale(1.08); animation-timing-function:ease-in-out;}
+  75%  {transform:scale(0.92); animation-timing-function:ease-in-out;}
+}
+
+@keyframes flip {
+  0%   {transform:rotateX(0deg); animation-timing-function:ease-in;}
+  50%  {transform:rotateX(90deg); animation-timing-function:ease-out;}
+}
+
+@keyframes fadeIn {
+  0%   {opacity:0; animation-timing-function:linear;}
+}
+
+.square {
+  position:absolute;
+  width:60px;
+  height:60px;
+  border-style:solid;
+  border-width:2px;
+  border-color:gray;
+  font-family:Helvetica;
+  font-weight:bold;
+  font-size:40px;
+  text-align:center;
+  line-height:60px;
+  user-select:none;
+}
+
+#board {
+  position:absolute;
+  width:344px;
+  height:494px;
+  text-align:center;
+}
