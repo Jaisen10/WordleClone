@@ -27,7 +27,6 @@ document.body.appendChild(b);
 makeBoard();
 
 positionBoard();
-setInterval(positionBoard, 10);
 
 onkeydown=function(event)
 {
@@ -201,6 +200,10 @@ function reset()
   squares = document.querySelectorAll(".button");
   squares.forEach(square => {square.remove();});
   makeBoard();
+}
+
+window.onresize = function() {
+  positionBoard();
 }
 
 function positionBoard()
